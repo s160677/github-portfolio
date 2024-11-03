@@ -53,9 +53,9 @@ ReLu(array)
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer():
-    pass
-    
-
+def neural_net_layer(arr_1, arr_2):
+    arr = arr_1 * arr_2
+    ReLu(arr, cutoff = 0)
+    return arr
 
 # ------------------------------------------
