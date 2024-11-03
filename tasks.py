@@ -19,6 +19,7 @@ def step(num):
     else: 
         return -1
 
+step(5)
 
 # -----------------------------------------------
 
@@ -33,8 +34,11 @@ def step(num):
 # Your code here:
 # -----------------------------------------------
 def ReLu(array, cutoff = 0):
-    return(array < cutoff)
+    return np.where(array < cutoff, cutoff, array)
 
+array = np.array([-3, -1, 0, 3, 7])
+
+ReLu(array)
 
 # -----------------------------------------------
 
@@ -49,10 +53,9 @@ def ReLu(array, cutoff = 0):
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer(2d_array, 1d_array):
-    x = 2d_array * 1array
+def neural_net_layer():
+    pass
     
-
 
 
 # ------------------------------------------
