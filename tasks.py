@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
@@ -54,8 +54,8 @@ ReLu(array)
 # -----------------------------------------------
 
 def neural_net_layer(arr_1, arr_2):
-    arr = arr_1 * arr_2
-    ReLu(arr, cutoff = 0)
-    return arr
+    arr = np.matmul(arr_1, arr_2)
+    ans = ReLu(arr, cutoff = 0)
+    return ans
 
 # ------------------------------------------
