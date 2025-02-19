@@ -41,7 +41,7 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#project overview" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
@@ -69,20 +69,62 @@
 
     <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
+    <section class="work" id="project overview">
       <div class="row">
+        <h2 class="section-title">Project Overview</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel-container">
+          <div class="carousel">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <img src="./images/RecipePal.png" class="carousel-image" alt="Project 1" />
+                <h3 class="carousel-title">Recipe Pal</h3>
+                <p class="carousel-description">Startup App to generate recipes using image recognition and AI.</p>
+                <a href="#project1" class="btn">View Project</a>
+              </div>
+            </div>
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <img src="./images/Demenchat.png" class="carousel-image" alt="Project 2" />
+                <h3 class="carousel-title">Generative AI Chatbot</h3>
+                <p class="carousel-description">Creation of an AI chatbot to help patients with Dementia.</p>
+                <a href="#project2" class="btn">View Project</a>
+              </div>
+            </div>
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <img src="./images/kaggle.webp" class="carousel-image" alt="Project 3" />
+                <h3 class="carousel-title">Machine Learning Series</h3>
+                <p class="carousel-description">Quartet of projects from basic to advanced Machine Learning.</p>
+                <a href="#project3" class="btn">View Project</a>
+              </div>
+            </div>
+            <!-- Carousel Item 4 -->
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <img src="./images/clients.png" class="carousel-image" alt="Project 4" />
+                <h3 class="carousel-title">Client Projects</h3>
+                <p class="carousel-description">My portfolio of projects working with real clients and real business cases.</p>
+                <a href="#project4" class="btn">View Project</a>
+              </div>
+          </div>
+        </div>
+        </div>
+
         <h2>My Projects</h2>
         <div class="work__boxes">
-
           <!-- Each div with the work__box class is a project. -->
-
           <div class="work__box">
-            <div class="work__text">
+            <div class="work__text" id="project1">
               <h3>Recipe Pal: AI-Powered Recipe Generator App</h3>
               <p>
                 Tasked by the University of Amsterdam to develop a startup. 
                 My team developed an app that uses AI-powered computer vision to recognize food ingredients and 
-                generate personalized food recipes based on user preferences. 
+                generate personalized food recipes based on user preferences utilizing API calls. 
                 The app was a demo and not yet published on app stores.
               </p>
               <ul class="work__list">
@@ -109,7 +151,7 @@
           </div>
 
           <div class="work__box">
-            <div class="work__text">
+            <div class="work__text" id="project2">
               <h3>Generative AI Chatbot for Dementia Care</h3>
               <p>
                 My team developed a python based generative language model tailored to care for dementia patients. 
@@ -141,7 +183,7 @@
           </div>
 
           <div class="work_box">
-            <div class="work__text">
+            <div class="work__text" id="project3">
             <h3>Machine Learning Project Series</h3>
             <p>
               These are machine learning projects I have worked on as part of the Behavioral Data Science curriculum. 
@@ -175,7 +217,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3> Sentiment Analysis</h3>
-              <p>Built on previous project to develop text analysis model using automated feature selection to predict customer satisfaction based on 
+              <p>Built on previous project to develop a text analysis model using automated feature selection to predict customer satisfaction based on 
                 Amazon product reviews.</p>
             </div>
             <ul class="work__list">
@@ -236,7 +278,7 @@
       <h2 class="section-title">Client Projects</h2>
       <div class="client-projects">
       
-        <div class="client__work__box">
+        <div class="client__work__box" id="project4">
           <div class="client__work__text">
             <h3>Interactive Teacher Dashboard for Prowise</h3>
             <p>
@@ -252,7 +294,7 @@
               <li>Plotly</li>
             </ul>
             <div class="work__links">
-              <a href="https://drive.google.com/file/d/1ReXAUnG5rT6hu10tddcgjSDfP8C9YI9z/view?usp=sharing" class="link__text">View Report <span>&rarr;</span></a>
+              <a href="plot.html" class="link__text">View Dashboard <span>&rarr;</span></a>
             </div>
           </div>
         </div>
@@ -274,14 +316,13 @@
               <li>Psychometrics</li>
             </ul>
             <div class="work__links">
-              <a href="plot.html" class="link__text">View Dashboard <span>&rarr;</span></a>
+              <a href="https://drive.google.com/file/d/1ReXAUnG5rT6hu10tddcgjSDfP8C9YI9z/view?usp=sharing" class="link__text">View Report <span>&rarr;</span></a>
             </div>
           </div>
         </div>
       
       </div>
-      </section>
-      
+    </section>
     
     <!-- ***** Clients ***** -->
 
@@ -306,27 +347,28 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I am a Behavioral Data Science student at the University of Amsterdam.  
+              I am currently a Masters student specializing in Behavioral Data Science at the University of Amsterdam.  
               This rigorous academic pursuit complements my professional experience,  
               equipping me to distill complex data into actionable intelligence for business decisions.
             </p>
             
             <p>
-              I have worked on several data science projects both for school and real clients, I  
-              hope to continue my journey in data science to work on projects that make a positive impact on society.
+              I have worked on several data science projects both for school and real clients. These experiences have deepened my passion
+              for leveraging data to create meaningful impact. I aspire to continue my journey in data science to work on projects that 
+              contribute positively to society and address global issues.
             </p>
             
             <p>
-              My main interest areas are in sports analytics, sustainability, and the latest AI applications.
+              My main interest areas are in sports analytics, sustainability, and cutting edge AI applications.
             </p>
             
             <p>
-              Outside of work, I am also a passionate rugby player and sports fanatic.  
+              Beyond my academic and professional pursuits, I am a passionate rugby player and sports fanatic.  
               I also enjoy traveling and exploring new cultures and cuisines, completing my ever-curious mind.
             </p>
             
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <a href="CV2025.pdf" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">

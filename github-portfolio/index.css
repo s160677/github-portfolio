@@ -237,6 +237,7 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--white);
     height: 100%;
     z-index: -1;
+
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
@@ -434,6 +435,80 @@ body:not(.user-is-tabbing) a:focus {
     .header__text p {
         transform: scale(.8);
     }
+}
+
+/* Swiper: Project Overview */
+/* CAROUSEL CONTAINER */
+.carousel-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensures snapping */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+    padding-bottom: 10px;
+}
+
+/* CAROUSEL (FLEXBOX LAYOUT) */
+.carousel {
+    display: flex;
+    gap: 20px; /* Space between items */
+    padding: 10px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-top: 1px;
+    padding-bottom: 130px;
+}
+
+/* CAROUSEL ITEM */
+.carousel-item {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    scroll-snap-align: start; /* Snap items to the start of the container */
+    width: 300px; /* Set a fixed width for each item */
+    background-color: #121212;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* CAROUSEL IMAGE */
+.carousel-image {
+    width: 100%; /* Ensure the image takes the full width of the carousel item */
+    height: 150px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-top-left-radius: 8px; /* Match the border radius of the carousel item */
+    border-top-right-radius: 8px;
+}
+
+.carousel-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* CAROUSEL CONTENT */
+.carousel-content {
+    padding: 20px;
+}
+
+.carousel-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.carousel-description {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom:30px;
+    margin-top:25px;
+}
+
+/* HIDE SCROLLBAR */
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.carousel-container {
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
 /* --------------------------------------- */
