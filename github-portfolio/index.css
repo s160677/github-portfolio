@@ -453,7 +453,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 15rem;
 }
 
 @media(max-width: 500px) {
@@ -505,6 +505,80 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* Client Projects Section */
+
+.client__work__box {
+    display: flex; /* Make this a flex container */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    width: 100%; /* Let the container take full width */
+    padding-bottom: 20px;
+    justify-content: space-between; /* Ensure space between text and image */
+}
+
+.client__work__text {
+    flex: 0 0 90%; /* Text section takes up 50% of the width */
+}
+
+.client__work__image-box {
+    margin-left: 20px; /* Space between text and image */
+    flex: 0 0 50%; /* Image section takes up 50% of the width */
+}
+
+.client__work__image-box img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Machine Learning projects */
+.ml-series {
+    display: flex;
+    justify-content: space-between;  /* Evenly spaces out the projects */
+    flex-wrap: wrap;  /* Allows the projects to wrap on smaller screens */
+    gap: 30px;  /* Space between each project */
+    margin-top: 20px;
+}
+
+.ml-series .work__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;  /* Adjust width so four projects fit horizontally */
+    padding: 20px 20px 20px .02px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ml-series .work__box:last-child {
+    border-right: none;  /* Remove border on the last project */
+}
+
+.ml-series .work__box h3 {
+    font-size: 2rem;  /* Adjust the font size to make it smaller */
+}
+.ml-series .work__box p {
+    font-size: 1.6rem;  /* Adjust the font size to make it smaller */
+}
+
+.ml-series .work__list {
+    font-size: 1.6rem;  /* Adjust the font size to make it smaller */
+}
+
+@media(max-width: 900px) {
+    .ml-series .work__box {
+        width: 45%;  /* Two projects per row on medium screens */
+    }
+}
+
+@media(max-width: 500px) {
+    .ml-series .work__box {
+        width: 90%;  /* One project per row on small screens */
+    }
+
+    .ml-series .work__box:not(:last-child) {
+        margin-bottom: 15rem;  /* Adjust bottom margin on smaller screens */
+    }
+}
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
